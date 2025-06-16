@@ -10,10 +10,10 @@
       background: #002920;
       color: #f5f5f5;
       text-align: center;
-      background-image: radial-gradient(circle at top, #004d40, #002920);
+      background: radial-gradient(circle at top, #004d40, #002920);
     }
     header {
-      padding: 40px 20px 20px 20px;
+      padding: 40px 20px 20px;
     }
     header h1 {
       font-size: 2em;
@@ -51,7 +51,8 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin-top: 60px;
+      margin: 60px auto;
+      max-width: 900px;
     }
     .module {
       background: rgba(255, 255, 255, 0.05);
@@ -64,8 +65,14 @@
     .module:hover {
       transform: translateY(-5px);
     }
+    .module svg {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
+      fill: #64dd17;
+    }
     .module h3 {
-      margin-top: 10px;
+      margin: 10px 0 5px;
       color: #a3f7bf;
     }
     .module p {
@@ -77,6 +84,11 @@
       font-size: 0.9em;
       color: #ccc;
     }
+    footer a {
+      color: #a3f7bf;
+      text-decoration: none;
+      margin: 0 5px;
+    }
   </style>
 </head>
 <body>
@@ -85,36 +97,43 @@
     <p>Fè pou nou, pa pou yo</p>
     <p>Téléchargez votre version :</p>
   </header>
+
   <div class="buttons">
-    <a class="button" href="#">Télécharger pour PC (.exe)</a>
-    <a class="button" href="#">Télécharger pour Android (.apk)</a>
+    <a class="button" href="TON_FICHIER_PC.exe">Télécharger pour PC (.exe)</a>
+    <a class="button" href="TON_FICHIER_ANDROID.apk">Télécharger pour Android (.apk)</a>
   </div>
 
   <div class="modules">
     <div class="module">
-      <h3>🏆 Palmarès</h3>
+      <svg viewBox="0 0 24 24"><path d="M12 2L15 8h7l-5.5 4.5L19 20l-7-4.5L5 20l2.5-7.5L2 8h7z"/></svg>
+      <h3>Palmarès</h3>
       <p>Classement quotidien des enseignes les moins chères.</p>
     </div>
     <div class="module">
-      <h3>📈 Suivi des Prix IA</h3>
-      <p>Surveillez l’évolution des prix avec l’intelligence artificielle.</p>
+      <svg viewBox="0 0 24 24"><path d="M3 17h2v-7H3v7zm4 0h2v-4H7v4zm4 0h2V7h-2v10zm4 0h2v-7h-2v7zm4 0h2v-10h-2v10z"/></svg>
+      <h3>Suivi des Prix IA</h3>
+      <p>Suivez l’évolution des prix avec IA.</p>
     </div>
     <div class="module">
-      <h3>🔔 Alertes Promos</h3>
-      <p>Recevez des alertes pour ne jamais rater une promo.</p>
+      <svg viewBox="0 0 24 24"><path d="M12 2a6 6 0 00-6 6v5H5l7 7 7-7h-1V8a6 6 0 00-6-6z"/></svg>
+      <h3>Alertes Promos</h3>
+      <p>Recevez des alertes instantanées.</p>
     </div>
     <div class="module">
-      <h3>🗺️ Carte des Territoires</h3>
-      <p>Comparez les prix entre les DOM, la métropole et les îles.</p>
+      <svg viewBox="0 0 24 24"><path d="M21 3H3v18h18V3zm-2 16H5V5h14v14z"/></svg>
+      <h3>Carte des Territoires</h3>
+      <p>Comparez prix DOM / Hexagone / îles.</p>
     </div>
     <div class="module">
-      <h3>🛒 Achats Malins</h3>
-      <p>Des conseils et astuces pour mieux gérer votre budget.</p>
+      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-7.07 17.07l2.83-2.83A6 6 0 0112 6a6 6 0 014.24 10.24l2.83 2.83A10 10 0 0012 2z"/></svg>
+      <h3>Achats Malins</h3>
+      <p>Conseils et astuces budget malin.</p>
     </div>
   </div>
 
   <footer>
     © 2025 A KI PRI SA YÉ — L'appli 100% péyi.
+    | <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Contact</a>
   </footer>
 </body>
 </html>
