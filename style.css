@@ -1,13 +1,31 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #003300, #006633);
+  background: radial-gradient(circle at center, #005e33, #00261c);
   color: #fff;
   text-align: center;
+  scroll-behavior: smooth;
+}
+
+nav {
+  background: #00331a;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 .degrade {
-  background: linear-gradient(90deg, #00c853, #2196f3, #9c27b0);
+  background: linear-gradient(90deg, #00c853, #00bfa5, #2979ff, #651fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -18,34 +36,44 @@ body {
 
 .buttons a {
   display: inline-block;
-  margin: 15px;
+  background: #00e676;
   padding: 15px 30px;
-  background: linear-gradient(135deg, #00c853, #64dd17);
-  color: #fff;
+  margin: 20px;
+  color: #000;
   text-decoration: none;
   border-radius: 8px;
+  font-weight: bold;
 }
 
 .buttons a:hover {
-  background: linear-gradient(135deg, #00e676, #76ff03);
+  background: #00c853;
 }
 
-.modules {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 40px 0;
+.modules, .presentation, .faq {
+  margin: 50px auto;
+  max-width: 800px;
 }
 
 .card {
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
+  margin: 20px;
   padding: 20px;
-  margin: 15px;
-  width: 250px;
+  border-radius: 12px;
+}
+
+.presentation, .faq {
+  text-align: left;
+}
+
+details {
+  background: rgba(0,0,0,0.2);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 footer {
-  margin: 40px 0;
+  margin: 50px 0;
   font-size: 0.9em;
+  color: #ccc;
 }
