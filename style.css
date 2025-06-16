@@ -1,7 +1,6 @@
-
 body {
-  background: linear-gradient(135deg, #e0f2f1, #b2dfdb);
-  color: #333;
+  background: linear-gradient(135deg, #004d00, #006600);
+  color: #f0f0f0;
   font-family: Arial, sans-serif;
   text-align: center;
   margin: 0;
@@ -9,15 +8,9 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin-top: 40px;
   margin-bottom: 10px;
-}
-
-.degrade {
-  background: linear-gradient(90deg, #26a69a, #80cbc4, #4db6ac);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .slogan {
@@ -30,17 +23,17 @@ h1 {
   display: inline-block;
   margin: 15px;
   padding: 15px 35px;
-  background: #26a69a;
+  background: #00cc44;
   color: #fff;
   border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s, transform 0.3s;
+  transition: background 0.3s, transform 0.2s;
 }
 
 .buttons a:hover {
-  background: #00897b;
-  transform: translateY(-3px);
+  background: #00a033;
+  transform: scale(1.05);
 }
 
 .modules {
@@ -53,18 +46,16 @@ h1 {
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.9);
-  color: #333;
+  background: rgba(255, 255, 255, 0.1);
   padding: 25px 30px;
   border-radius: 15px;
   width: 250px;
   font-size: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
+  transition: background 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 section {
@@ -80,21 +71,27 @@ h2 {
 }
 
 .faq-item {
-  background: rgba(255, 255, 255, 0.9);
-  color: #333;
+  background: rgba(255, 255, 255, 0.1);
   margin: 10px auto;
   padding: 15px;
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.faq-item:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 footer {
-  background: #b2dfdb;
-  color: #333;
   margin: 50px 0 20px 0;
   font-size: 0.9rem;
-  padding: 20px;
+  color: #ccc;
+}
+
+.degrade {
+  background: linear-gradient(90deg, #00cc44, #00b3b3, #8e2de2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 nav {
@@ -102,7 +99,7 @@ nav {
 }
 
 nav a {
-  color: #333;
+  color: #f0f0f0;
   margin: 0 20px;
   text-decoration: none;
   font-weight: bold;
@@ -110,23 +107,4 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  .modules {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    width: 80%;
-  }
-
-  .buttons a {
-    width: 80%;
-  }
 }
