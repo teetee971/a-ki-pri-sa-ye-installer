@@ -7,60 +7,60 @@
 </head>
 <body>
   <nav>
-    <a href="#accueil">Accueil</a>
+    <a href="#">Accueil</a>
     <a href="#modules">Modules</a>
     <a href="#presentation">Présentation</a>
     <a href="#faq">FAQ</a>
   </nav>
 
-  <header id="accueil">
-    <h1><span class="degrade">A KI PRI SA YÉ</span></h1>
-    <p class="slogan">Fè pou nou, pa pou yo</p>
-    <p>Téléchargez votre version :</p>
-    <div class="buttons">
-      <a href="#">Télécharger pour PC (.exe)</a>
-      <a href="#">Télécharger pour Android (.apk)</a>
-    </div>
-  </header>
+  <h1><span class="degrade">A KI PRI SA YÉ</span></h1>
+  <p class="slogan">Fè pou nou, pa pou yo</p>
+  <p>Téléchargez votre version :</p>
 
-  <main>
-    <section id="modules" class="modules">
-      <div class="card">🏆 <strong>Palmarès</strong><br>Classement quotidien des enseignes les moins chères.</div>
-      <div class="card">🧠 <strong>Suivi des Prix IA</strong><br>Surveillez l'évolution des prix avec l'intelligence artificielle.</div>
-      <div class="card">🔔 <strong>Alertes Promos</strong><br>Recevez des alertes promos en temps réel.</div>
-      <div class="card">🗺️ <strong>Carte des Territoires</strong><br>Comparez les prix DOM / Métropole.</div>
-      <div class="card">🛒 <strong>Achats Malins</strong><br>Conseils & astuces pour économiser.</div>
-    </section>
+  <div class="buttons">
+    <a href="https://github.com/teetee971/a-ki-pri-sa-ye-installer/raw/main/akiprisaye.exe">Télécharger pour PC (.exe)</a>
+    <a href="https://github.com/teetee971/a-ki-pri-sa-ye-installer/raw/main/akiprisaye.apk">Télécharger pour Android (.apk)</a>
+  </div>
 
-    <section id="presentation" class="presentation">
-      <h2>Présentation</h2>
-      <p>
-        « A KI PRI SA YÉ » est une application 100% péyi, pensée pour lutter contre la vie chère. 
-        Elle aide chaque citoyen à comparer les prix, recevoir des alertes promo, surveiller les tendances et 
-        partager ses astuces pour que chacun puisse acheter au prix juste. 
-        Fè pou nou, pa pou yo !
-      </p>
-    </section>
+  <section id="modules" class="modules">
+    <div class="card">🏆 <strong>Palmarès</strong><br>Classement quotidien des enseignes les moins chères.</div>
+    <div class="card">🧠 <strong>Suivi des Prix IA</strong><br>Suivi intelligent de l’évolution des prix.</div>
+    <div class="card">🔔 <strong>Alertes Promos</strong><br>Notifications instantanées pour ne jamais rater une promo.</div>
+    <div class="card">🗺️ <strong>Carte des Territoires</strong><br>Comparez les prix DOM / Métropole.</div>
+    <div class="card">🛒 <strong>Achats Malins</strong><br>Conseils & astuces pour mieux économiser.</div>
+  </section>
 
-    <section id="faq" class="faq">
-      <h2>FAQ</h2>
-      <details>
-        <summary>💡 Pourquoi utiliser cette appli ?</summary>
-        <p>Pour surveiller vos dépenses et économiser facilement, en comparant les prix partout.</p>
-      </details>
-      <details>
-        <summary>🔒 Mes données sont-elles protégées ?</summary>
-        <p>Oui ! Aucune donnée personnelle ne sera partagée sans votre accord.</p>
-      </details>
-      <details>
-        <summary>⚙️ Comment signaler un prix abusif ?</summary>
-        <p>Utilisez le bouton « Dénoncer un prix » dans l'appli pour alerter la communauté.</p>
-      </details>
-    </section>
-  </main>
+  <section id="presentation">
+    <h2>Présentation</h2>
+    <p><strong>« A KI PRI SA YÉ »</strong> est une application 100% péyi, conçue pour lutter contre la vie chère.  
+    <br>💪 <strong>Pour qui ?</strong> Tous les citoyens qui veulent payer le juste prix.  
+    <br>🎯 <strong>Pourquoi ?</strong> Pour comparer facilement les prix, recevoir des alertes, suivre les tendances et dénoncer les abus.  
+    <br>✨ <strong>L’intérêt :</strong> Faire des économies, choisir les meilleures enseignes et partager des astuces avec la communauté.</p>
+  </section>
+
+  <section id="faq">
+    <h2>FAQ</h2>
+    <div class="faq-item">▼ 💡 Pourquoi utiliser cette appli ?<br>Pour surveiller ses dépenses et économiser facilement.</div>
+    <div class="faq-item">▼ 🔒 Mes données sont-elles protégées ?<br>Oui ! Aucune donnée personnelle n’est partagée sans votre accord.</div>
+    <div class="faq-item">▼ ⚙️ Comment signaler un prix abusif ?<br>Utilisez le bouton « Dénoncer un prix » dans l’appli.</div>
+  </section>
 
   <footer>
-    © 2025 A KI PRI SA YÉ — L'appli 100% péyi.
+    <p>📦 <strong>Télécharger le PACK COMPLET :</strong></p>
+    <a id="zipDownload" href="#" class="button">📦 Télécharger le PACK COMPLET (ZIP)</a>
+    <p>© 2025 A KI PRI SA YÉ — L'appli 100% péyi.</p>
   </footer>
+
+  <script>
+    document.getElementById("zipDownload").addEventListener("click", function (e) {
+      e.preventDefault();
+      const link = document.createElement("a");
+      link.href = "https://github.com/teetee971/a-ki-pri-sa-ye-installer/raw/main/A_KI_PRI_SA_YE_FULL_PACKAGE.zip";
+      link.download = "A_KI_PRI_SA_YE_FULL_PACKAGE.zip";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  </script>
 </body>
 </html>
