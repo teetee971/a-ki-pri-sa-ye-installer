@@ -1,55 +1,48 @@
-/* Fond général */
+
 body {
-  background: linear-gradient(135deg, #004d00, #006600);
-  color: #fff;
+  background: linear-gradient(135deg, #e0f2f1, #b2dfdb);
+  color: #333;
   font-family: Arial, sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
-/* Titre plus gros avec ombre */
 h1 {
-  font-size: 4rem;  /* Encore plus imposant */
+  font-size: 4rem;
   margin-top: 40px;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
-/* Dégradé du titre */
 .degrade {
-  background: linear-gradient(90deg, #00cc44, #00b3b3, #8e2de2);
+  background: linear-gradient(90deg, #26a69a, #80cbc4, #4db6ac);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Slogan */
 .slogan {
   font-style: italic;
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
-/* Boutons de téléchargement */
 .buttons a {
   display: inline-block;
   margin: 15px;
   padding: 15px 35px;
-  background: #00cc44;
+  background: #26a69a;
   color: #fff;
   border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s, transform 0.3s;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 
 .buttons a:hover {
-  background: #00a033;
+  background: #00897b;
   transform: translateY(-3px);
 }
 
-/* Module cartes */
 .modules {
   display: flex;
   flex-wrap: wrap;
@@ -60,33 +53,20 @@ h1 {
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
   padding: 25px 30px;
   border-radius: 15px;
   width: 250px;
   font-size: 1rem;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 0.8s forwards;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
 }
 
-/* Animation apparitions */
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.card:hover {
+  transform: translateY(-5px);
 }
 
-/* Délai animation pour un effet escalier */
-.modules .card:nth-child(1) { animation-delay: 0.1s; }
-.modules .card:nth-child(2) { animation-delay: 0.2s; }
-.modules .card:nth-child(3) { animation-delay: 0.3s; }
-.modules .card:nth-child(4) { animation-delay: 0.4s; }
-.modules .card:nth-child(5) { animation-delay: 0.5s; }
-
-/* Sections */
 section {
   margin: 40px auto;
   max-width: 900px;
@@ -99,29 +79,30 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* FAQ */
 .faq-item {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
   margin: 10px auto;
   padding: 15px;
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 footer {
+  background: #b2dfdb;
+  color: #333;
   margin: 50px 0 20px 0;
   font-size: 0.9rem;
-  color: #ccc;
+  padding: 20px;
 }
 
-/* Navbar */
 nav {
   margin: 20px 0;
 }
 
 nav a {
-  color: #fff;
+  color: #333;
   margin: 0 20px;
   text-decoration: none;
   font-weight: bold;
@@ -131,7 +112,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Responsive mobile */
 @media (max-width: 768px) {
   h1 {
     font-size: 3rem;
