@@ -7,7 +7,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #002920; /* Vert Caraïbe sombre */
+      background: #002920;
       color: #f5f5f5;
       text-align: center;
       background-image: radial-gradient(circle at top, #004d40, #002920);
@@ -41,6 +41,31 @@
     .button:hover {
       background: linear-gradient(135deg, #64dd17, #00c853);
     }
+    .modules {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 60px;
+    }
+    .module {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 15px;
+      width: 250px;
+      transition: transform 0.3s ease;
+    }
+    .module:hover {
+      transform: translateY(-5px);
+    }
+    .module h3 {
+      margin-top: 10px;
+      color: #a3f7bf;
+    }
+    .module p {
+      font-size: 0.9em;
+      color: #ddd;
+    }
     footer {
       margin-top: 60px;
       font-size: 0.9em;
@@ -55,9 +80,33 @@
     <p>Téléchargez votre version :</p>
   </header>
   <div class="buttons">
-    <a class="button" href="https://github.com/teetee971/a-ki-pri-sa-ye-installer/releases/download/v1.0/a-ki-pri-sa-ye-installer.exe">Télécharger pour PC (.exe)</a>
-    <a class="button" href="https://github.com/teetee971/a-ki-pri-sa-ye-installer/releases/download/v1.0/a-ki-pri-sa-ye-installer.apk">Télécharger pour Android (.apk)</a>
+    <a class="button" href="#">Télécharger pour PC (.exe)</a>
+    <a class="button" href="#">Télécharger pour Android (.apk)</a>
   </div>
+
+  <div class="modules">
+    <div class="module">
+      <h3>🏆 Palmarès</h3>
+      <p>Classement quotidien des enseignes les moins chères.</p>
+    </div>
+    <div class="module">
+      <h3>📈 Suivi des Prix IA</h3>
+      <p>Surveillez l’évolution des prix avec l’intelligence artificielle.</p>
+    </div>
+    <div class="module">
+      <h3>🔔 Alertes Promos</h3>
+      <p>Recevez des alertes pour ne jamais rater une promo.</p>
+    </div>
+    <div class="module">
+      <h3>🗺️ Carte des Territoires</h3>
+      <p>Comparez les prix entre les DOM, la métropole et les îles.</p>
+    </div>
+    <div class="module">
+      <h3>🛒 Achats Malins</h3>
+      <p>Des conseils et astuces pour mieux gérer votre budget.</p>
+    </div>
+  </div>
+
   <footer>
     © 2025 A KI PRI SA YÉ — L'appli 100% péyi.
   </footer>
